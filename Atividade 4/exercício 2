@@ -1,0 +1,23 @@
+static void Main(string[] args)
+[
+  int alunos = 0;
+            double media, total = 0;
+            int[]x=new int[10];
+            Console.WriteLine("escreva 10 notas");
+            for (int i = 0; i < 10; i++)    
+            { 
+                x[i] = int.Parse(Console.ReadLine());
+                total = total + x[i];
+            }
+            media = total / 10;
+            for(int i = 0; i<10; i++)
+            {
+                if (media < x[i])
+                {
+                    alunos++;
+                }
+            }
+            Console.WriteLine("a media é: " + media);
+            Console.WriteLine("o numero de alunos acima da média é: " + alunos);
+            
+        }
