@@ -1,0 +1,32 @@
+ int c1 = 0, c2 = 0, nulo = 0, branco = 0,
+                TotalVotos = 0, voto = 0;
+           
+            while (voto!=-1)
+            {
+                Console.WriteLine("Digite seu voto");
+                voto = int.Parse(Console.ReadLine());
+                if (voto == 1)
+                { c1++; TotalVotos++; }
+                if(voto == 2)
+                {c2++; TotalVotos++; }
+                if(voto == 3)
+                {branco++; TotalVotos++; }
+                if(voto ==4)
+                {nulo++; TotalVotos++; }
+                
+
+            }
+            if(c1 > c2)
+            {
+                Console.WriteLine("o vencedor é o candidato 1 com " + c1);
+            }
+            else
+            {
+                Console.WriteLine("o vencedor é o candidato 2 com " + c2);
+            }
+            Console.WriteLine("Total de votos: " + TotalVotos );
+            Console.WriteLine("Total de votos nulos: " + nulo);
+            Console.WriteLine("Total de votos em branco: " + branco);
+            Console.WriteLine("Total de votos para o candidato 1: " + c1);
+            Console.WriteLine("Total de votos para o candidato 2: " + c2);
+
