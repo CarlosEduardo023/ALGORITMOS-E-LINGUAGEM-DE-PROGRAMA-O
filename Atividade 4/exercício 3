@@ -1,0 +1,15 @@
+ static void Main(string[] args)
+        {
+            int x;
+            uint maior;
+            uint[] v = new uint[10];
+            Console.WriteLine("escreva 10 numeros: ");
+            for (int i = 0; i < 10; i++)
+            {
+                v[i] = uint.Parse(Console.ReadLine());
+            }
+            maior = v.Max();
+            x = Array.IndexOf(v, maior);
+            Console.WriteLine("o maior é:" + maior);
+            Console.WriteLine("e sua posição no vetor é: " + x);
+        }   
