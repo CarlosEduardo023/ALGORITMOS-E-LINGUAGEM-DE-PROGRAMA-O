@@ -1,0 +1,17 @@
+static void Main(string[] args)
+        {
+            int x;
+            int[] a = new int[10];
+            Console.WriteLine("escreva 10 numeros: ");
+            for (int i = 0; i < 10; i++)
+            {
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("escreva o numero pelo qual quer multiplicar os outros 10:");
+            x= int.Parse(Console.ReadLine());
+            int[] m = new int[10];
+            for (int s = 0; s < 10; s++)
+            {
+                m[s] = a[s] * x;
+                Console.WriteLine(m[s]);
+            }
